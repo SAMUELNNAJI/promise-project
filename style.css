@@ -381,6 +381,7 @@ footer {
         width: 90%;
         padding: 40px;
         display: none;
+        z-index: 99999999999999;
     }
 
     .top-nav-container.active {
