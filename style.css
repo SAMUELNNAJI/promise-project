@@ -98,6 +98,7 @@ header {
     padding: 10px;
     border-radius: 15px;
     margin-top: 10px;
+
 }
 
 .bottom-nav div {
@@ -121,7 +122,7 @@ i {
         justify-content: space-between;
         align-items: last baseline;
         margin-top: 40px;
-        padding: 0 10px;
+        padding: 0 20px;
 
         h5 {
             color: var(--sub-color--);
@@ -342,7 +343,21 @@ footer {
 
 
 /* MOBILE SCREEN */
-@media (max-width:1199px) {
+
+@media (max-width:769px) {
+
+    .bottom-nav {
+        width: 90%;
+    }
+
+    .bottom-nav div {
+        color: var(--text-color--);
+        max-width: 80px;
+    }
+}
+
+@media (max-width:1119px) {
+
 
     .logo {
         h1 {
