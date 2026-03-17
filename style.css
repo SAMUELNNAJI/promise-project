@@ -241,6 +241,7 @@ i {
 footer {
     background-color: var(--nav-bg-color);
     padding: 10px;
+    border-radius: 14px 14px 0 0;
 
 
     .footer {
