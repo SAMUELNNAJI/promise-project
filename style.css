@@ -65,6 +65,23 @@ header {
     backdrop-filter: blur(10px);
 }
 
+
+/* FIXED NAV ON SCROLL (Desktop) */
+.top.scrolled {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    /* Adds a shadow for contrast */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Optional: subtle border */
+    animation: slideDown 3s ease-in-out;
+    transition: 0.8s;
+}
+
 .top-nav-container {
     display: flex;
     gap: 200px;
@@ -400,10 +417,6 @@ footer {
         padding: 15px 10px;
         width: 100vw;
         justify-content: space-between;
-        position: sticky;
-        top: 0;
-        background-color: var(--nav-bg-color);
-        z-index: 1000;
     }
 
     .top-nav-container {
@@ -476,6 +489,8 @@ footer {
     }
 
 }
+
+
 
 /* DESKTOP VERSION */
 @media (min-width: 1200px) {
