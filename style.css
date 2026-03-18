@@ -45,6 +45,10 @@ header {
     align-items: center;
 }
 
+.logo a {
+    text-decoration: none;
+}
+
 .logo h1 {
     font-size: 20px;
     color: var(--text-color--);
