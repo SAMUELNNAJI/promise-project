@@ -57,11 +57,12 @@ header {
     justify-content: space-between;
     gap: 50px;
     background-color: var(--nav-bg-color);
-    border: 1.3px solid gray;
+    border: 1.4px solid gray;
     padding: 10px;
     /* backdrop-filter: blur(20px); */
     border-radius: 20px;
     min-width: 90%;
+    backdrop-filter: blur(10px);
 }
 
 .top-nav-container {
@@ -94,7 +95,7 @@ header {
     display: flex;
     gap: 7rem;
     background-color: rgba(128, 128, 128, 0.087);
-    border: 1.2px solid gray;
+    border: 1.4px solid gray;
     padding: 10px;
     border-radius: 15px;
     margin-top: 10px;
@@ -216,6 +217,8 @@ i {
             height: 4px;
             margin-bottom: 20px;
             position: relative;
+            margin-top: 20px;
+            border-radius: 52px;
         }
 
         .LINE::before {
@@ -225,6 +228,7 @@ i {
             width: 40px;
             height: 4px;
             left: 0;
+            border-radius: 52px;
         }
 
         button {
@@ -273,8 +277,12 @@ footer {
 
         .Explore ul {
             list-style: none;
+            margin-top: 10px;
 
 
+            li {
+                margin-bottom: 10px;
+            }
 
             a {
                 text-decoration: none;
@@ -320,6 +328,7 @@ footer {
     .footer-write-up {
         display: flex;
         justify-content: center;
+        flex-direction: column;
         gap: 10px;
         align-items: center;
         padding: 5px 10px;
@@ -353,6 +362,10 @@ footer {
     .bottom-nav div {
         color: var(--text-color--);
         max-width: 80px;
+    }
+
+    .top {
+        max-width: 97%;
     }
 }
 
@@ -466,6 +479,7 @@ footer {
 
         .footer-write-up {
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
             gap: 10px;
             margin-inline: 50px;
