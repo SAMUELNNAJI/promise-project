@@ -70,6 +70,7 @@ header {
     gap: 200px;
     align-items: center;
     justify-content: center;
+
 }
 
 .top-nav ul {
@@ -246,7 +247,8 @@ i {
 footer {
     background-color: var(--nav-bg-color);
     padding: 10px;
-    border-radius: 14px 14px 0 0;
+    border-radius: 34px 34px 0 0;
+
 
 
     .footer {
@@ -355,6 +357,7 @@ footer {
 
 @media (max-width:769px) {
 
+
     .bottom-nav {
         width: 90%;
     }
@@ -392,10 +395,15 @@ footer {
         }
     }
 
+
     .top {
         padding: 15px 10px;
         width: 100vw;
         justify-content: space-between;
+        position: sticky;
+        top: 0;
+        background-color: var(--nav-bg-color);
+        z-index: 1000;
     }
 
     .top-nav-container {
@@ -403,6 +411,17 @@ footer {
         position: absolute;
         top: 90px;
         gap: 50px;
+        z-index: 1000;
+        background-color: var(--main-color--);
+        z-index: 1000;
+    }
+
+    .top-nav-container {
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        gap: 50px;
+        z-index: 1000;
         background-color: var(--main-color--);
         box-shadow: 10px 10px 20px rgba(6, 4, 4, 0.687),
             -10px -10px 20px rgb(25, 20, 20);
@@ -410,7 +429,8 @@ footer {
         width: 90%;
         padding: 40px;
         display: none;
-        z-index: 99999999999999;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .top-nav-container.active {
